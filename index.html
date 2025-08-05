@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snackfit</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+
+  <header class="encabezado">
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div class="buscador">
+      <input type="text" placeholder="¿Qué estás buscando?" />
+      <button>🔍</button>
+    </div>
+    <div class="acciones">
+      <div class="carrito-container">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="contador-carrito" id="contador-carrito">0</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="categorias">
+    <a href="#">INICIO</a>
+    <a href="#">PRODUCTOS</a>
+    <a href="#">CATEGORÍAS</a>
+    <a href="#">NOSOTROS</a>
+    <a href="#">CONTACTO</a>
+  </nav>
+  <section class="intro-productos">
+    <h2>Descubre nuestros snacks saludables</h2>
+    <p>En SnackFit te ofrecemos una selección premium de snacks naturales, ideales para una alimentación balanceada. Encuentra almendras, granolas, pecanas y mucho más, ¡a precios increíbles!</p>
+  </section>
+  <main class="productos">
+    <!-- Producto 1 -->
+    <article class="producto">
+      <div class="descuento">-25%</div>
+      <img src="img/images2.jpeg" alt="almendras">
+      <h3>ALMENDRAS BOLSA X 1KG</h3>
+      <p class="precio">S/ 41.99 </p>
+      <div class="cantidad-selector">
+        <button class="btn-menos">-</button>
+        <input type="number" class="cantidad" value="1" min="1">
+          <button class="btn-mas">+</button>
+      </div>
+      <button class="agregar-carrito">Agregar al carrito</button>
+      <i class="fa-regular fa-heart corazon"></i>
+      <i class="fa-solid fa-trash eliminar-carrito"></i>
+    </article>
+
+    <!-- Producto 2 -->
+    <article class="producto">
+      <div class="descuento">-40%</div>
+      <img src="img/images3.jpeg" alt="granolas">
+      <h3>GRANOLAS BOLSA X 1KG</h3>
+      <p class="precio">S/ 51.54</p>
+      <div class="cantidad-selector">
+        <button class="btn-menos">-</button>
+        <input type="number" class="cantidad" value="1" min="1">
+        <button class="btn-mas">+</button>
+      </div>
+      <button class="agregar-carrito">Agregar al carrito</button>
+      <i class="fa-regular fa-heart corazon"></i>
+      <i class="fa-solid fa-trash eliminar-carrito"></i>
+    </article>
+
+    <!-- Producto 3 -->
+    <article class="producto">
+      <div class="descuento">-40%</div>
+      <img src="img/images4.jpeg" alt="pecanas">
+      <h3>PECANAS BOLSA X 1KG</h3>
+      <p class="precio">S/ 73.40</p>
+      <div class="cantidad-selector">
+        <button class="btn-menos">-</button>
+        <input type="number" class="cantidad" value="1" min="1">
+        <button class="btn-mas">+</button>
+      </div>
+      <button class="agregar-carrito">Agregar al carrito</button>
+      <i class="fa-regular fa-heart corazon"></i>
+      <i class="fa-solid fa-trash eliminar-carrito"></i>
+    </article>
+
+    <!-- Producto 4 -->
+    <article class="producto">
+      <div class="descuento">-42%</div>
+      <img src="img/images5.jpeg" alt="pasas">
+      <h3>PASAS X 500GR</h3>
+      <p class="precio">S/ 12.40</p>
+      <div class="cantidad-selector">
+        <button class="btn-menos">-</button>
+        <input type="number" class="cantidad" value="1" min="1">
+        <button class="btn-mas">+</button>
+      </div>
+      <button class="agregar-carrito">Agregar al carrito</button>
+      <i class="fa-regular fa-heart corazon"></i>
+      <i class="fa-solid fa-trash eliminar-carrito"></i>
+    </article>
+
+    <!-- Producto 5 -->
+    <article class="producto">
+      <div class="descuento">-20%</div>
+      <img src="img/images6.jpeg" alt="barritas energeticas">
+      <h3>BARRITAS ENERGETICAS X UNIDAD</h3>
+      <p class="precio">S/ 7.92</p>
+      <div class="cantidad-selector">
+        <button class="btn-menos">-</button>
+        <input type="number" class="cantidad" value="1" min="1">
+        <button class="btn-mas">+</button>
+      </div>
+      <button class="agregar-carrito">Agregar al carrito</button>
+      <i class="fa-regular fa-heart corazon"></i>
+      <i class="fa-solid fa-trash eliminar-carrito"></i>
+    </article>
+    
+    <!-- Producto 6 -->
+    <article class="producto">
+      <div class="descuento">-20%</div>
+      <img src="img/images7.jpeg" alt="barritas energeticas">
+      <h3>ARANDONOS ROJOS BOLSA X 1KG</h3>
+      <p class="precio">S/ 31.92</p>
+      <div class="cantidad-selector">
+        <button class="btn-menos">-</button>
+        <input type="number" class="cantidad" value="1" min="1">
+        <button class="btn-mas">+</button>
+      </div>
+      <button class="agregar-carrito">Agregar al carrito</button>
+      <i class="fa-regular fa-heart corazon"></i>
+      <i class="fa-solid fa-trash eliminar-carrito"></i>
+    </article>
+  </main>
+<section class="beneficios">
+    <div class="beneficio-item"><i class="fas fa-truck"></i> Envío Gratis</div>
+    <div class="beneficio-item"><i class="fas fa-shield-alt"></i> Pago Seguro</div>
+    <div class="beneficio-item"><i class="fas fa-leaf"></i> 100% Natural</div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Suscríbete a nuestras promociones</h2>
+    <input type="email" placeholder="Tu correo electrónico">
+    <button>Suscribirme</button>
+  </section>
+
+  <section class="testimonios">
+    <h2>Testimonios</h2>
+    <p class="testimonio">"Los mejores snacks del mercado, naturales y deliciosos." - Carla M.</p>
+    <p class="testimonio">"Snackfit me ayuda a mantener una dieta saludable sin sacrificar sabor." - José R.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Snackfit. Todos los derechos reservados.</p>
+    <p>Síguenos en redes: 
+      <i class="fab fa-facebook"></i> 
+      <i class="fab fa-instagram"></i> 
+      <i class="fab fa-twitter"></i>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
