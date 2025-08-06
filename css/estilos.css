@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4fd4c1;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100px;
+  margin-left: 5px;
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.buscador input {
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+.buscador button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  background-color: #0a192f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cantidad-selector{
+  display: felx;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.cantidad-selector button{
+  background-color: #2b6777;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cantidad-selector input.cantidad{
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrito-container {
+  position: relative;
+  background-color: #0a192f;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.contador-carrito {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 3px 6px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.categorias {
+  background-color: #0a192f;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.categorias a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.categorias a:hover {
+  color: #ff6600;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.descuento {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: crimson;
+  color: white;
+  padding: 3px 6px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.precio {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.intro-productos{
+  background-color: #f2fff2;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.intro-productos h2{
+  color: #2e7d32;
+  font-size: 24px;
+  margin-bottom:10px;
+}
+.intro-productos p{
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+button.agregar-carrito {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 60%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.agregar-carrito:hover {
+  background: #e05500;
+}
+
+.corazon,
+.eliminar-carrito {
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #333;
+}
+ 
+.beneficios {
+  background-color: #f2f5f7;
+  padding: 40px;
+  text-align: center;
+}
+
+.beneficio-item {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+.beneficio-item i {
+  color: #2b6777;
+  margin-right: 10px;
+}
+
+.newsletter {
+  background-color: #ddeeff;
+  padding: 30px;
+  text-align: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #2b6777;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.testimonios {
+  background-color: #f9fafb;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  margin-bottom: 20px;
+}
+
+.testimonio {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #2b6777;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+footer i {
+  margin: 0 5px;
+}
